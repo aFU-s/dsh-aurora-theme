@@ -1,6 +1,6 @@
 # dsh-aurora-theme
 
-此插件由Deepseek模型生成，主要用于DSH的功能和性能测试
+此插件由Deepseek模型生成，主要用于DSH的功能和性能测试。
 深空极光主题插件（DSH / DeepSeek Harness，Web 界面）。换肤之外自带一个背景图编辑器：从系统文件对话框直选本地图片，实时调节不透明度、亮度、饱和度、模糊、缩放、暗化、填充方式与界面玻璃度。
 
 A DeepSeek Harness plugin that restyles the web UI with a deep-space aurora
