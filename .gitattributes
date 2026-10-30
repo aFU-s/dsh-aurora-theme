@@ -1,0 +1,6 @@
+# Keep LF in the repository AND in the working tree.
+#
+# scripts/smoke.mjs compares lib/ byte-for-byte against what scripts/build.mjs
+# regenerates from src/, so a CRLF checkout (the default with core.autocrlf=true
+# on Windows) would make `npm test` fail on a fresh clone for no real reason.
+* text=auto eol=lf

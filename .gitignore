@@ -1,0 +1,7 @@
+# lib/ is intentionally COMMITTED: a git install (dsh plugin add git+https://…)
+# has no build step and pnpm blocks lifecycle scripts by default, so the shipped
+# bundle has to be in the repository. Rebuild it with `npm run build` and commit
+# the result whenever src/ changes.
+node_modules/
+*.tgz
+.DS_Store

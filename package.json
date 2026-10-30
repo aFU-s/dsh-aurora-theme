@@ -1,0 +1,67 @@
+{
+  "name": "dsh-aurora-theme",
+  "version": "0.2.0",
+  "description": "Deep-space aurora theme for the DeepSeek Harness web UI, with a built-in wallpaper editor (native file picker, fill modes, opacity/brightness/blur/scale/scrim).",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "plugin",
+    "theme",
+    "wallpaper",
+    "background-image",
+    "aurora"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-theme"
+      ]
+    }
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node scripts/smoke.mjs",
+    "prepack": "node scripts/build.mjs"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/cordis": {
+      "optional": true
+    }
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aFU-s/dsh-aurora-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aFU-s/dsh-aurora-theme/issues"
+  },
+  "homepage": "https://github.com/aFU-s/dsh-aurora-theme#readme"
+}
